@@ -14,7 +14,7 @@ require "easymon/checks/memcached_check"
 require "easymon/checks/semaphore_check"
 require "easymon/checks/traffic_enabled_check"
 require "easymon/checks/http_check"
-require "easymon/checks/rails_check"
+require "easymon/checks/live_check"
 require "easymon/testing"
 
 module Easymon

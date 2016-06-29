@@ -1,9 +1,9 @@
 require 'test_helper'
 
-class RailsCheckTest < ActiveSupport::TestCase
+class LiveCheckTest < ActiveSupport::TestCase
 
   test "#check sets success conditions on successful run" do
-    check = Easymon::RailsCheck.new
+    check = Easymon::LiveCheck.new
     results = check.check
 
     assert_equal(true, results[0])
@@ -11,7 +11,7 @@ class RailsCheckTest < ActiveSupport::TestCase
   end
 
   test "#check sets failure conditions on a failed run" do
-    check = Easymon::RailsCheck.new
+    check = Easymon::LiveCheck.new
     check.stubs(:rails_version_available?).returns(false)
     results = check.check
 

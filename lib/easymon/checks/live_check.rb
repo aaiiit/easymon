@@ -1,5 +1,5 @@
 module Easymon
-  class RailsCheck
+  class LiveCheck
     def check
       check_status = rails_version_available?
       if check_status
