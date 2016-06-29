@@ -3,9 +3,9 @@ module Easymon
     def check
       check_status = rails_version_available?
       if check_status
-        message = "ENABLED"
+        message = "Up"
       else
-        message = "DISABLED"
+        message = "Down"
       end
       [check_status, message]
     end
