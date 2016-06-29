@@ -3,7 +3,8 @@ development:
   encoding: utf8
   database: dummy_development
   username: root
-  host: 127.0.0.1
+  password: my-secret-pw
+  host: 172.17.8.201
   port: 3306
 
 # Warning: The database defined as "test" will be erased and
@@ -14,7 +15,8 @@ test:
   encoding: utf8
   database: dummy_test
   username: root
-  host: 127.0.0.1
+  password: my-secret-pw
+  host: 172.17.8.201
   port: 3306
 
 test_slave:
@@ -22,7 +24,8 @@ test_slave:
   encoding: utf8
   database: dummy_test_slave
   username: root
-  host: 127.0.0.1
+  password: my-secret-pw
+  host: 172.17.8.201
   port: 3306
 
 production:
@@ -38,7 +41,7 @@ pg_test:
   adapter: postgresql
   encoding: utf8
   database: postgres
-  username: dummy
-  password: dummy
-  host: 127.0.0.1
+  username: postgres
+  password: peppieopzijnsteppie
+  host: 172.17.8.201
   port: 5432
